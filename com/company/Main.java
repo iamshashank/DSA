@@ -74,7 +74,21 @@ public class Main {
         m.firstKey(); // this will not remove from the map
         m.lastKey();
         m.pollFirstEntry(); // remove too
+
+        Deque<Integer> dq = new ArrayDeque<>();
+        dq.add(4);
+        dq.add(1);
+        dq.add(2);
+        dq.add(5);
+        System.out.println(dq);
+        System.out.println(dq.peekFirst()+":"+dq.peekLast());
+        dq.addFirst(100);
+        dq.addLast(200);
+        System.out.println(dq);
+
         */
+
+
 
 	// write your code here
         System.out.println("LongestSubstringWithKUniqueCharacters = " + new LongestSubstringWithAtmost_K_UniqueCharacters().googledAlgo("aabacbebebenkwndkwndkwdndnwkabibiwufiow", 4));
@@ -361,6 +375,16 @@ public class Main {
         new Google_MaxSumPathOf_K_Length().setup();
         System.out.println(Arrays.toString(new Easy_IntersectionOf2Array().intersection(new int[]{1,2,2,1}, new int[]{2, 2})));
         System.out.println(new Easy_IntersectionOf2Array().optimised(new int[]{4, 5, 9}, new int[]{4, 4, 8, 9, 9}));
+        System.out.println(new Google_PartitionString().partition("232387421", 2, 3));
+        System.out.println(new Google_PartitionString().partition("232387421431445", 3, 3));
+//        "2323|87|421|431|445"
+//        "2323|87421|431445"
+//        "2323|87421431|445"
+//        "232387|421431|445"
+//        "232387|421|431445"
+//        "232387421|431|445"
 
+        System.out.println(new Google_CountPair_satisfying_condition().process(new int[]{3,2,6,5,1,6}, new int[]{6,1,2,1,5,7}, 1, 1));
+        System.out.println(new HouseRobber().rob(new int[]{2,7,9,3,1}));
     }
 }
