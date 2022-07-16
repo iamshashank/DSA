@@ -7,9 +7,11 @@ import java.util.Arrays;
  * 312. Burst Balloons
  * Hard
  *
- * You are given n balloons, indexed from 0 to n - 1. Each balloon is painted with a number on it represented by an array nums. You are asked to burst all the balloons.
+ * You are given n balloons, indexed from 0 to n - 1.
+ * Each balloon is painted with a number on it represented by an array nums. You are asked to burst all the balloons.
  *
- * If you burst the ith balloon, you will get nums[i - 1] * nums[i] * nums[i + 1] coins. If i - 1 or i + 1 goes out of bounds of the array, then treat it as if there is a balloon with a 1 painted on it.
+ * If you burst the ith balloon, you will get nums[i - 1] * nums[i] * nums[i + 1] coins.
+ * If i - 1 or i + 1 goes out of bounds of the array, then treat it as if there is a balloon with a 1 painted on it.
  *
  * Return the maximum coins you can collect by bursting the balloons wisely.
  *
@@ -37,14 +39,15 @@ public class BurstBalloons {
         n[n.length-1] = 1;
         for(int i =1;i<n.length-1;i++)
             n[i] = nums[i-1];
-        System.out.println(Arrays.toString(n));
-        // now onlu use `n` array
+//        System.out.println(Arrays.toString(n));
+        // now only use `n` array
         int[][] dp = new int[n.length][n.length];
         // we fill the dp array diagonally
         int max = Integer.MIN_VALUE;
         for(int i=1;i<=nums.length;i++){
             // here `i` represent the size of sub-array we are calculating for
             // so in the starting it will be [1,1] [2,2] which are sub-array of size 1
+
             // `l` goes from 1 to N-window_size so basically window should reach the end
             for(int l = 1; l< n.length-i;l++){
                 // so this `l` is the start or left of sub-array and `r` is the right of sub array

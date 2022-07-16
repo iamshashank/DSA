@@ -16,14 +16,15 @@ public class Google_MaxSumPathOf_K_Length {
     }
 
     /**
-     * In this at every node (every node is a root if its sub-tree) there is 3 option
-     * 1. Max sum path is on left sub-tree
-     * 2. Max sum path is on right sum tree
-     * 3. Math sum path goes root 1 or more elements on left tree + root + 1 or more from right
+     * In this at every node (every node is a root if its subtree) there is 3 option
+     * 1. Max sum path is on left subtree
+     * 2. Max sum path is on right subtree
+     * 3. Math sum path goes through root (1 or more elements on left tree + root + 1 or more from right)
      */
     int maxPathSumK(TreeNode node, int k){
         if(node == null) return Integer.MIN_VALUE;
-        int ans = Math.max( maxPathSumK(node.left, k), maxPathSumK(node.right, k) );
+        int ans = Math.max( maxPathSumK(node.left, k), maxPathSumK(node.right, k) ); // CASE 1, 2
+        // CASE 3
         for(int i=0;i<k;i++){
             // we divide k elements between left and right subtree + 1 for root
             int left = maxPathK(node.left, i);

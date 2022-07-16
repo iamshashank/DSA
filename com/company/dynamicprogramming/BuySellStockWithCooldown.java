@@ -38,7 +38,7 @@ public class BuySellStockWithCooldown {
         l = p.length;
         dp = new int[l][2];
         for(int i =0;i<l;i++) Arrays.fill(dp[i], -1);
-        return profit(0, 0);
+        return profit(0, 0); // b = buy/sell indicator
     }
 
     // b = 1 is bought
@@ -48,10 +48,12 @@ public class BuySellStockWithCooldown {
         int ans = 0;
         // skip
         ans = profit(i+1, b);
+
         if(b == 1){
             // sell
             ans = Math.max(ans, profit(i+2, 0) + p[i]); // +1 extra for cooldown
         }else{
+            // buy
             ans = Math.max(ans, profit(i+1, 1) - p[i]);
         }
         return dp[i][b] = ans;

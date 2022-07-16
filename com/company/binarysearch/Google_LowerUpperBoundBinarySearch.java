@@ -41,7 +41,6 @@ public class Google_LowerUpperBoundBinarySearch {
 
     private int upperBound(int[] a, int l, int r, int v){
         int N = l;
-        int S = l;
         while(l<r){
             int mid = (l+r)/2;
             if(v >= a[mid]){

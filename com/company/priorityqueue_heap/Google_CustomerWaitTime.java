@@ -3,8 +3,9 @@ package com.company.priorityqueue_heap;
 import java.util.PriorityQueue;
 
 /**
- * Given T[] , an array that represents N agents and the time they need to serve customers . All N agents can serve at oce
- * for M customers if they are waiting , they choose the agent with least serving time . If a New customer comes in , calculate the total wait time.
+ * Given T[] , an array that represents N agents and the time they need to serve customers . All N agents can serve at once
+ * for M customers if they are waiting , they choose the agent with the least serving time .
+ * If a New customer comes in , calculate the total wait time.
  */
 public class Google_CustomerWaitTime {
     public int waitTime(int n, int m, int[] agents){

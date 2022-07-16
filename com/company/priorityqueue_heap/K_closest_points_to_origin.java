@@ -6,7 +6,8 @@ import java.util.PriorityQueue;
  * 973. K Closest Points to Origin
  * Medium
  *
- * Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0).
+ * Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k,
+ * return the k closest points to the origin (0, 0).
  *
  * The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)2 + (y1 - y2)2).
  *
@@ -33,6 +34,8 @@ import java.util.PriorityQueue;
 
 public class K_closest_points_to_origin {
     public int[][] kClosest(int[][] points, int k) {
+        // DESC ORDER OF DISTANCE FROM ORIGIN
+        // We will keep only K-closest points in  the queue
         PriorityQueue<int[]> q = new PriorityQueue<>((a, b)->{
             double d1 = Math.sqrt((a[0]*a[0])+(a[1]*a[1]));
             double d2 = Math.sqrt((b[0]*b[0])+(b[1]*b[1]));
