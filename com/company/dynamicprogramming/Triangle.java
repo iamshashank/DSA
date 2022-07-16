@@ -62,6 +62,14 @@ public class Triangle {
         return dp[row][index] = sum;
     }
 
+
+    int processClassic(int i, int j){
+        if(i >= t.size()) return 0;
+        if(dp[i][j] != -1) return dp[i][j];
+        int pathCost = Math.min( process(i+1, j), process(i+1, j+1) );
+        return dp[i][j] = t.get(i).get(j) + pathCost;
+    }
+
     public int minimumTotalBottomUp(List<List<Integer>> triangle) {
         int n = triangle.size();
         int[][] dp = new int[n+1][n+1];
