@@ -29,7 +29,7 @@ import java.util.TreeSet;
 
 public class Goolge_HARD_MaxSumOfRectangleNoLargerThanK {
     public int maxSumSubmatrix(int[][] m, int K) {
-        // kadane's algo
+        // ane's algo
         int r = m.length, c = m[0].length;
         int[] a = new int[r]; // vertical column
 

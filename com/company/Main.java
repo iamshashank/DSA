@@ -30,6 +30,7 @@ import com.company.graph.InstallPackagesWithDependency;
 import com.company.graph.disjointset.Google_MostStoneRemovedWithSameRowOrColumn;
 import com.company.hash.*;
 import com.company.hash_and_sorting.HandOfStraight;
+import com.company.kadane.KadaneContigousSubarrayWithLargestSum;
 import com.company.knapsack.Google_MinDiffBetweenServerLoad;
 import com.company.knapsack.KnapSackRecursiveMemoization;
 import com.company.knapsack.MaxSplitOfPositiveEvenIntergers;
@@ -46,7 +47,6 @@ import com.company.wierd_searching.Search2DMatrix;
 import com.company.dijakstra_single_source_shortest_path.NumberOfWaysToArriveAtDestination;
 import com.company.dijakstra_single_source_shortest_path.PathWithMaxProbability;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main {
@@ -386,5 +386,12 @@ public class Main {
 
         System.out.println(new Google_CountPair_satisfying_condition().process(new int[]{3,2,6,5,1,6}, new int[]{6,1,2,1,5,7}, 1, 1));
         System.out.println(new HouseRobber().rob(new int[]{2,7,9,3,1}));
+        System.out.println(new OutOfBoundaryPath().findPaths(1,3, 3, 0, 1));
+        List<String> ttt = new ArrayList<>();
+        ttt.add("leet");
+        ttt.add("code");
+        System.out.println(new WordBreak().wordBreak("leetcode", ttt));
+        System.out.println(Arrays.toString(new ProductOfArray_ExceptSelf().productExceptSelf(new int[]{-1,1,0,-3,3})));
+        System.out.println(new Hard_DungeonGame_II().calculateMinimumHP(new int[][]{{-2,-3,3},{-5,-10,1},{10,30,-5}}));
     }
 }

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.kadane;
 
 public class KadaneContigousSubarrayWithLargestSum {
     public int process(int[] a){
