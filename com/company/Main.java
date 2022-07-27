@@ -393,5 +393,10 @@ public class Main {
         System.out.println(new WordBreak().wordBreak("leetcode", ttt));
         System.out.println(Arrays.toString(new ProductOfArray_ExceptSelf().productExceptSelf(new int[]{-1,1,0,-3,3})));
         System.out.println(new Hard_DungeonGame_II().calculateMinimumHP(new int[][]{{-2,-3,3},{-5,-10,1},{10,30,-5}}));
+        System.out.println(new Wierd_MinCostPathInGrid().minPathCost(
+                new int[][]{ {5,3},{4,0},{2,1} },
+                new int[][]{ {9,8},{1,5},{10,12},{18,6},{2,4},{14,3} }
+        ));
+        System.out.println(new NumberOfUniqueDigits().countNumbersWithUniqueDigits(5));
     }
 }
