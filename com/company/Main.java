@@ -398,5 +398,8 @@ public class Main {
                 new int[][]{ {9,8},{1,5},{10,12},{18,6},{2,4},{14,3} }
         ));
         System.out.println(new NumberOfUniqueDigits().countNumbersWithUniqueDigits(5));
+        System.out.println(new LIS_LargestDivisibleSubset().largestDivisibleSubset(new int[]{1,2,4,8}));
+        System.out.println(Arrays.toString(new CountingBits().countBits(23)));
+        System.out.println(new IntegerBreak().integerBreak(30));
     }
 }
