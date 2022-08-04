@@ -401,5 +401,8 @@ public class Main {
         System.out.println(new LIS_LargestDivisibleSubset().largestDivisibleSubset(new int[]{1,2,4,8}));
         System.out.println(Arrays.toString(new CountingBits().countBits(23)));
         System.out.println(new IntegerBreak().integerBreak(30));
+        System.out.println(new MirrorReflection().mirrorReflection(3,2));
+        System.out.println(new ArithmeticSlice().numberOfArithmeticSlices(new int[]{1,2,3,4, 1, 3, 5}));
+        System.out.println(new PartitionEqualSubsetSum().canPartition(new int[]{ 1,5,11,5 }));
     }
 }
