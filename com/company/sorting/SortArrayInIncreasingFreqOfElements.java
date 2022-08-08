@@ -49,9 +49,9 @@ public class SortArrayInIncreasingFreqOfElements {
             d.add(new Pair(v, k));
         });
 
-        for (Pair a : d) {
-            System.out.println(a.freq + " " + a.value);
-        }
+//        for (Pair a : d) {
+//            System.out.println(a.freq + " " + a.value);
+//        }
 
         d.sort((a, b) -> {
             if (a.freq != b.freq) {

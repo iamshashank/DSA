@@ -33,7 +33,8 @@ public class DiffBetweenLargestAndSmallestIn3Moves {
     public int minDifference(int[] n) {
         // in the question we have to remove/change atmost 3 digits and after that find MAX - MIN
         // we find out the 4 smallest and 4 largest we will eliminate the 3 pair which have the largest diff
-        // we can remove 3 largest in this case our ans is 4th largest - smallest                  -> b[0] - a[0]
+
+        // we can remove (3 largest) in this case our ans is 4th largest - smallest                  -> b[0] - a[0]
         // we can remove 2 largest & 1 smallest in this case our ans is 3th largest - 2nd smallest -> b[1] - a[1]
         // we can remove 1 largest & 2 smallest in this case our ans is 2th largest - 3rd smallest -> b[2] - a[2]
         // we can remove 0 largest & 3 smallest in this case our ans is largest - 4th smallest     -> b[3] - a[3]

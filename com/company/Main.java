@@ -15,6 +15,8 @@ import com.company.binarytree.*;
 import com.company.design.Google_Design_DataStructiure_I;
 import com.company.dfs.*;
 import com.company.circular_tour.Hard_GasStation;
+import com.company.game_theory.DivisorGame;
+import com.company.game_theory.Google_FlipGame_II;
 import com.company.gcd.Google_LargestNumber;
 import com.company.graph.disjointset.EarliestMomentEveryOneBecameFriend;
 import com.company.greedy.FarthestBuildingYouCanReach;
@@ -85,6 +87,11 @@ public class Main {
         dq.addFirst(100);
         dq.addLast(200);
         System.out.println(dq);
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.forEach((k, v) -> {
+
+        });
 
         */
 
@@ -404,5 +411,13 @@ public class Main {
         System.out.println(new MirrorReflection().mirrorReflection(3,2));
         System.out.println(new ArithmeticSlice().numberOfArithmeticSlices(new int[]{1,2,3,4, 1, 3, 5}));
         System.out.println(new PartitionEqualSubsetSum().canPartition(new int[]{ 1,5,11,5 }));
+        System.out.println(new CountVowelPermutation().countVowelPermutation(1000));
+        System.out.println(10 ^ 11); // XOR
+        System.out.println(1 ^ 1); // XOR
+        System.out.println(11 ^ 01); // XOR
+        System.out.println(new DivisorGame().divisorGame(4));
+        System.out.println(new Google_FlipGame_II().canWin("++++"));
+        System.out.println(new Google_FlipGame_II().canWin("++-++"));
+
     }
 }
